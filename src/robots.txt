@@ -1,0 +1,15 @@
+User-agent: *
+Disallow: /
+Disallow: /wp-admin
+Disallow: /wp-json
+Disallow: /wp-includes
+Disallow: /wp-content/plugins
+Disallow: /cgi-bin
+Disallow: /go/
+Disallow: /play/
+Disallow: /?
+Disallow: */trackback
+Disallow: */feed
+Disallow: */embed
+Host:
+Sitemap:

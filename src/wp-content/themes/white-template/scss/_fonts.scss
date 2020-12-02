@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: local('Gilroy Black'), local('Gilroy-Black'), url('./fonts/Gilroy-Black.woff') format('woff'), url('./fonts/Gilroy-Black.eot') format('eot'), url('./fonts/Gilroy-Black.ttf') format('truetype');
+    font-weight: 900;
+        font-style: normal;
+        font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: local('Gilroy Bold'), local('Gilroy-Bold'), url('./fonts/Gilroy Bold.woff') format('woff'), url('./fonts/Gilroy Bold.eot') format('eot'), url('./fonts/Gilroy Bold.ttf') format('truetype');
+    font-weight: bold;
+        font-style: normal;
+        font-display: swap;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: local('Gilroy Medium'), local('Gotham-Medium'), url('./fonts/Gotham-Medium.woff') format('woff'), url('./fonts/Gotham-Medium.eot') format('eot'), url('./fonts/Gotham-Medium.ttf') format('truetype');
+    font-weight: 500;
+        font-style: normal;
+        font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: local('Gotham Regular'), local('Gotham-Regular'), url('./fonts/Gotham-Regular.woff') format('woff'), url('./fonts/Gotham-Regular.eot') format('eot'), url('./fonts/Gotham-Regular.ttf') format('truetype');
+    font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+}

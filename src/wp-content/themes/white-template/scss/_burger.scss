@@ -1,0 +1,93 @@
+.burger {
+    display: none;
+}
+@media screen and (max-width: 999px) {
+    .burger {
+      flex-shrink: 0;
+        // align-self: center;
+        padding-top: 9px; // на этот проект
+        width: 40px;
+        height: 22px;
+        display: block;
+        cursor: pointer;
+        &:hover .burger__line::before {
+          transform: translateX(130%);
+        }
+        &:hover .burger__line::after {
+          transform: translateX(130%);
+        }
+        &__line {
+          position: relative;
+          display: block;
+          height: 2px;
+          width: 100%;
+          overflow: hidden;
+          &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -130%;
+            height: 2px;
+            width: 100%;
+            background-color: #fff;
+            transition: all ease .3s;
+          }
+          &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 2px;
+            width: 100%;
+            background-color: #fff;
+            transition: all ease .3s;
+          }
+          &_top {
+            transition: transform .3s, background-color .6s, top .3s .3s;
+            top: 0;
+          }
+          &_middle {
+            margin: 8px 0;
+            width: 80%;
+            transition-delay: .3s;
+            float: right;
+            &::before,
+            &::after {
+              transition-delay: 75ms;
+            }
+          }
+          &_bottom {
+            bottom: 0;
+            transition: transform .3s, background-color .6s, bottom .3s .3s;
+            margin-bottom: 0;
+            &::before,
+            &::after {
+              transition-delay: 150ms;
+            }
+          }
+        }
+      }
+      .burger.burger_active {
+        .burger__line {
+          background-color: #fff;
+          &::after,
+          &::before {
+            opacity: 0;
+            display: none;
+          }
+          &_top {
+            transition: top .3s, background-color 0s, transform .3s .3s;
+            transform: rotate(45deg);
+            top: 11px;
+          }
+          &_middle {
+            opacity: 0;
+          }
+          &_bottom {
+            transform: rotate(-45deg);
+            bottom: 10px;
+            transition: bottom .3s, background-color 0s, transform .3s .3s;
+          }
+        }
+      }
+}

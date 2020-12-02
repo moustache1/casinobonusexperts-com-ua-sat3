@@ -1,0 +1,57 @@
+.full-404{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.bg-404{
+    margin-top: 80px;
+    font-weight: 900;
+    font-size: 200px;
+    line-height: 200px;
+    font-family: 'Gilroy', sans-serif;
+    color: #101240;
+    text-align: center;
+    @media screen and (max-width: 520px) {
+        font-size: 130px;
+        line-height: 150px;
+        text-align: center;
+    }
+}
+.text-404{
+    width: 100%;
+    text-align: center;
+    & span{
+        font-family: 'Gilroy', sans-serif;
+        font-weight: 900;
+        color: #F20505;
+        font-size: 48px;
+        line-height: 48px;
+        text-align: center;
+        @media screen and (max-width: 520px) {
+            font-size: 24px;
+            line-height: 24px;
+        }
+    }
+    & p{
+        margin-top: 30px;
+        font-family: 'Gilroy', sans-serif;
+        color: #101240;
+        font-size: 14px;
+        line-height: 18px;
+    }
+    & a{
+        color: #F20505;
+    }
+}
+.btn-primary a{
+    color: #F20505;
+    &:hover{
+        color: #fff;
+    }
+}
+.btn-404{
+    margin: 50px 0;
+    @media screen and (max-width: 520px) {
+        margin: 30px 0;
+    }
+}

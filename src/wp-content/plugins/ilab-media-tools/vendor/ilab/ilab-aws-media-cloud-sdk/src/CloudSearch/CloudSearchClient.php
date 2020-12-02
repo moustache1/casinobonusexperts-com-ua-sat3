@@ -1,0 +1,58 @@
+<?php
+namespace ILABAmazon\CloudSearch;
+
+use ILABAmazon\AwsClient;
+
+/**
+ * This client is used to interact with the **Amazon CloudSearch** service.
+ *
+ * @method \ILABAmazon\Result buildSuggesters(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise buildSuggestersAsync(array $args = [])
+ * @method \ILABAmazon\Result createDomain(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise createDomainAsync(array $args = [])
+ * @method \ILABAmazon\Result defineAnalysisScheme(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise defineAnalysisSchemeAsync(array $args = [])
+ * @method \ILABAmazon\Result defineExpression(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise defineExpressionAsync(array $args = [])
+ * @method \ILABAmazon\Result defineIndexField(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise defineIndexFieldAsync(array $args = [])
+ * @method \ILABAmazon\Result defineSuggester(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise defineSuggesterAsync(array $args = [])
+ * @method \ILABAmazon\Result deleteAnalysisScheme(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise deleteAnalysisSchemeAsync(array $args = [])
+ * @method \ILABAmazon\Result deleteDomain(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise deleteDomainAsync(array $args = [])
+ * @method \ILABAmazon\Result deleteExpression(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise deleteExpressionAsync(array $args = [])
+ * @method \ILABAmazon\Result deleteIndexField(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise deleteIndexFieldAsync(array $args = [])
+ * @method \ILABAmazon\Result deleteSuggester(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise deleteSuggesterAsync(array $args = [])
+ * @method \ILABAmazon\Result describeAnalysisSchemes(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise describeAnalysisSchemesAsync(array $args = [])
+ * @method \ILABAmazon\Result describeAvailabilityOptions(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise describeAvailabilityOptionsAsync(array $args = [])
+ * @method \ILABAmazon\Result describeDomains(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise describeDomainsAsync(array $args = [])
+ * @method \ILABAmazon\Result describeExpressions(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise describeExpressionsAsync(array $args = [])
+ * @method \ILABAmazon\Result describeIndexFields(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise describeIndexFieldsAsync(array $args = [])
+ * @method \ILABAmazon\Result describeScalingParameters(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise describeScalingParametersAsync(array $args = [])
+ * @method \ILABAmazon\Result describeServiceAccessPolicies(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise describeServiceAccessPoliciesAsync(array $args = [])
+ * @method \ILABAmazon\Result describeSuggesters(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise describeSuggestersAsync(array $args = [])
+ * @method \ILABAmazon\Result indexDocuments(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise indexDocumentsAsync(array $args = [])
+ * @method \ILABAmazon\Result listDomainNames(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise listDomainNamesAsync(array $args = [])
+ * @method \ILABAmazon\Result updateAvailabilityOptions(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise updateAvailabilityOptionsAsync(array $args = [])
+ * @method \ILABAmazon\Result updateScalingParameters(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise updateScalingParametersAsync(array $args = [])
+ * @method \ILABAmazon\Result updateServiceAccessPolicies(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise updateServiceAccessPoliciesAsync(array $args = [])
+ */
+class CloudSearchClient extends AwsClient {}

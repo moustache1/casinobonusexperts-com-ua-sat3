@@ -1,0 +1,26 @@
+.custom_breadcrumbs{
+    margin-top: 30px;
+    & span{
+        font-size: 12px;
+        line-height: 16px;
+        font-weight: bold;
+        color: #82899D;
+        font-family: 'Gilroy', sans-serif;
+        &:hover{
+            color: #F20505;
+            cursor: pointer;
+        }
+        &.kb_title{
+            color: #82899D;
+        }
+    }
+} 
+.game-items-cat .games-block {
+    margin-top: 0;
+    & h2{
+    display: none;
+    }
+    & .btn-primary{
+        display: none;
+    }
+}

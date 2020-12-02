@@ -1,0 +1,102 @@
+.affiliate-vertical {
+    height: 383px;
+    @media screen and (max-width: 1221px) {
+        height: 296px;
+    }
+    @media screen and (max-width: 1025px) {
+        height: 237px;
+    }
+    @media screen and (max-width: 922px) {
+        height: 148px;
+    }
+    @media screen and (max-width: 644px) {
+        height: 259px;     
+    }
+    @media screen and (max-width: 457px) {
+        height: 294px;
+    }
+    & .container{
+        padding-bottom: 0;
+    }
+}
+.affiliate-vertical-container{
+    margin-top: 60px;
+    @media screen and (max-width: 1000) {
+        margin-top: 30px;
+    }
+    @media screen and (max-width: 500) {
+        margin-top: 0;
+    }
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width: 644px) {
+        flex-direction: column;
+        text-align: center;      
+    }
+    & .text{
+        padding-top: 69px;
+        @media screen and (max-width: 1025px) {
+            padding-top: 20px;
+        }
+        @media screen and (max-width: 922px) {
+            padding-top: 10px;            
+        }
+    }
+    & .text-top{
+        color: #101240;
+        font-family: 'Gilroy', sans-serif;
+        font-weight: 900;
+        font-size: 11px;
+        line-height: 15px;
+        text-transform: uppercase;
+        text-align: left;
+        & a{
+            color: #F20505;
+        }
+        @media screen and (max-width: 457px) {
+            text-align: center;  
+        }
+    }
+    & .text-main{
+        margin-top: 16px;
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 53px;
+        font-family: 'Gilroy', sans-serif;
+        color: #101240;
+        text-align: left;
+        & a{
+            color: #F20505;
+        }
+        @media screen and (max-width: 922px) {
+            font-size: 30px;
+            line-height: 35px;
+        }
+        @media screen and (max-width: 457px) {
+            text-align: center;  
+        }
+        @media screen and (max-width: 374px) {
+            font-size: 24px;
+            line-height: 30px;
+        }
+    }
+    & .img{
+        width: 647px;
+        margin-left: 30px;
+        @media screen and (max-width: 644px) {
+            width: 100%;
+            margin-left: 0;   
+        }
+        & img{
+            @media screen and (max-width: 1221px) {
+                width: 500px;
+            }
+            @media screen and (max-width: 1025px) {
+                width: 400px;
+            }
+            @media screen and (max-width: 922px) {
+                width: 250px;
+            }
+        }
+    }
+}

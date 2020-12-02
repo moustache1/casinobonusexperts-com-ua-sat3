@@ -1,0 +1,51 @@
+<?php
+namespace ILABAmazon\Connect;
+
+use ILABAmazon\AwsClient;
+
+/**
+ * This client is used to interact with the **Amazon Connect Service** service.
+ * @method \ILABAmazon\Result createUser(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise createUserAsync(array $args = [])
+ * @method \ILABAmazon\Result deleteUser(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise deleteUserAsync(array $args = [])
+ * @method \ILABAmazon\Result describeUser(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise describeUserAsync(array $args = [])
+ * @method \ILABAmazon\Result describeUserHierarchyGroup(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise describeUserHierarchyGroupAsync(array $args = [])
+ * @method \ILABAmazon\Result describeUserHierarchyStructure(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise describeUserHierarchyStructureAsync(array $args = [])
+ * @method \ILABAmazon\Result getContactAttributes(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise getContactAttributesAsync(array $args = [])
+ * @method \ILABAmazon\Result getCurrentMetricData(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise getCurrentMetricDataAsync(array $args = [])
+ * @method \ILABAmazon\Result getFederationToken(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise getFederationTokenAsync(array $args = [])
+ * @method \ILABAmazon\Result getMetricData(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise getMetricDataAsync(array $args = [])
+ * @method \ILABAmazon\Result listRoutingProfiles(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise listRoutingProfilesAsync(array $args = [])
+ * @method \ILABAmazon\Result listSecurityProfiles(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise listSecurityProfilesAsync(array $args = [])
+ * @method \ILABAmazon\Result listUserHierarchyGroups(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise listUserHierarchyGroupsAsync(array $args = [])
+ * @method \ILABAmazon\Result listUsers(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise listUsersAsync(array $args = [])
+ * @method \ILABAmazon\Result startOutboundVoiceContact(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise startOutboundVoiceContactAsync(array $args = [])
+ * @method \ILABAmazon\Result stopContact(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise stopContactAsync(array $args = [])
+ * @method \ILABAmazon\Result updateContactAttributes(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise updateContactAttributesAsync(array $args = [])
+ * @method \ILABAmazon\Result updateUserHierarchy(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise updateUserHierarchyAsync(array $args = [])
+ * @method \ILABAmazon\Result updateUserIdentityInfo(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise updateUserIdentityInfoAsync(array $args = [])
+ * @method \ILABAmazon\Result updateUserPhoneConfig(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise updateUserPhoneConfigAsync(array $args = [])
+ * @method \ILABAmazon\Result updateUserRoutingProfile(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise updateUserRoutingProfileAsync(array $args = [])
+ * @method \ILABAmazon\Result updateUserSecurityProfiles(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise updateUserSecurityProfilesAsync(array $args = [])
+ */
+class ConnectClient extends AwsClient {}

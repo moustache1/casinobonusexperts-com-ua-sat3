@@ -1,0 +1,53 @@
+<?php
+namespace ILABAmazon\MQ;
+
+use ILABAmazon\AwsClient;
+
+/**
+ * This client is used to interact with the **AmazonMQ** service.
+ * @method \ILABAmazon\Result createBroker(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise createBrokerAsync(array $args = [])
+ * @method \ILABAmazon\Result createConfiguration(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise createConfigurationAsync(array $args = [])
+ * @method \ILABAmazon\Result createTags(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise createTagsAsync(array $args = [])
+ * @method \ILABAmazon\Result createUser(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise createUserAsync(array $args = [])
+ * @method \ILABAmazon\Result deleteBroker(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise deleteBrokerAsync(array $args = [])
+ * @method \ILABAmazon\Result deleteTags(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise deleteTagsAsync(array $args = [])
+ * @method \ILABAmazon\Result deleteUser(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise deleteUserAsync(array $args = [])
+ * @method \ILABAmazon\Result describeBroker(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise describeBrokerAsync(array $args = [])
+ * @method \ILABAmazon\Result describeBrokerEngineTypes(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise describeBrokerEngineTypesAsync(array $args = [])
+ * @method \ILABAmazon\Result describeBrokerInstanceOptions(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise describeBrokerInstanceOptionsAsync(array $args = [])
+ * @method \ILABAmazon\Result describeConfiguration(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise describeConfigurationAsync(array $args = [])
+ * @method \ILABAmazon\Result describeConfigurationRevision(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise describeConfigurationRevisionAsync(array $args = [])
+ * @method \ILABAmazon\Result describeUser(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise describeUserAsync(array $args = [])
+ * @method \ILABAmazon\Result listBrokers(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise listBrokersAsync(array $args = [])
+ * @method \ILABAmazon\Result listConfigurationRevisions(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise listConfigurationRevisionsAsync(array $args = [])
+ * @method \ILABAmazon\Result listConfigurations(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise listConfigurationsAsync(array $args = [])
+ * @method \ILABAmazon\Result listTags(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise listTagsAsync(array $args = [])
+ * @method \ILABAmazon\Result listUsers(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise listUsersAsync(array $args = [])
+ * @method \ILABAmazon\Result rebootBroker(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise rebootBrokerAsync(array $args = [])
+ * @method \ILABAmazon\Result updateBroker(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise updateBrokerAsync(array $args = [])
+ * @method \ILABAmazon\Result updateConfiguration(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise updateConfigurationAsync(array $args = [])
+ * @method \ILABAmazon\Result updateUser(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise updateUserAsync(array $args = [])
+ */
+class MQClient extends AwsClient {}

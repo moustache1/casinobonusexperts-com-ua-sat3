@@ -1,0 +1,64 @@
+.post-wrapper{
+    display: flex;
+    justify-content: flex-start;
+    @media only screen and (max-width: 1000px){
+        flex-direction: column;
+    }
+    &-left{
+        max-width: 870px;
+        width: 100%;
+        &-btn .btn-main{
+            margin: 30px auto;
+        text-align: center;
+        padding: 9px 53px 12px 51px;
+        max-width: 270px;
+        }
+        & .content_scroll{
+            overflow-y: hidden;
+            height: 100%;
+        }
+        & .main-text {
+            margin-bottom: 0;
+        }
+    }
+    &-right{
+        margin-left: 30px;
+        max-width: 270px;
+        width: 100%;
+        @media only screen and (max-width: 1000px){
+            margin-left: 0;
+        }
+    }
+}
+
+.post{
+    & .games-block h3{
+        font-size: 24px;
+        line-height: 29px;
+        font-family: 'Montserrat-Bold', sans-serif;
+        font-weight: 900;
+        color: #101240;
+    }
+    & .games-block .btn-primary{
+        display: none;
+    }
+    & .games-wrapper{
+        flex-wrap: nowrap;
+        flex-direction: column;
+        text-align: left;
+    }
+    & .game-card {
+        max-width: 270px;
+        width: 100%;
+        margin-left: 0;
+    }
+    & .container{
+        padding: 0;
+    }
+    & .game-card-image{
+        height: 135px;
+    }
+    & .game-card-name{
+        height: 80px;
+    }
+}

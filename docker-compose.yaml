@@ -1,0 +1,42 @@
+---
+version: '3'
+
+services:
+  nginx:
+    image: nginx:1.16.0-alpine
+    ports:
+      - 80:80
+    volumes:
+      - ./src:/var/www/html
+      - ./docker/nginx/local.conf:/etc/nginx/conf.d/default.conf:ro
+
+  fpm:
+    user: "$UID"
+    build:
+      context: docker/fpm
+      dockerfile: Dockerfile.alpine
+    environment:
+      WP_LOCAL: "true"
+      WP_DEBUG: "false"
+      MYSQL_DATABASE: ${WP_PROJECT_ID}
+      MYSQL_USER: ${WP_PROJECT_ID}
+      MYSQL_PASSWORD: ${WP_DB_PASS}
+      MYSQL_HOST: mysql
+    expose:
+      - 9000
+    volumes:
+      - ./src:/var/www/html
+      - ./docker/fpm/www.conf:/etc/php7/php-fpm.d/www.conf:ro
+
+  mysql:
+    user: "$UID"
+    image: percona:5.7.26-centos
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: ${WP_PROJECT_ID}
+      MYSQL_USER: ${WP_PROJECT_ID}
+      MYSQL_PASSWORD: ${WP_DB_PASS}
+    ports:
+      - 3306:3306
+    volumes:
+      - ./docker/mysql/init:/docker-entrypoint-initdb.d

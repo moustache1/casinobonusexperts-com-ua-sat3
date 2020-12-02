@@ -1,0 +1,402 @@
+.casino-review{
+    &-post{
+        & .container{
+            padding: 0;
+        }
+        & .content{
+            margin: 0;
+        }
+        & .content_scroll{
+            overflow-y: hidden;
+        }
+
+        &-single-post{
+            max-width: 770px;
+        }
+        & .author{
+            margin-bottom: 60px;
+        }
+    }
+    &-top-block{
+        display: flex;
+        justify-content: flex-start;
+        @media screen and (max-width: 900px) {
+            flex-direction: column;
+            align-items: center;
+        }
+        width: 100%;
+        margin-top: 30px;
+    }
+    &-left{
+        max-width: 470px;
+        @media screen and (max-width: 514px){
+            text-align: center;
+        }
+    }
+    &-rating{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    &-mark{
+        padding-top: 4px;
+        margin-left: 10px;
+        color: #F20505;
+        font-family: 'Gilroy', sans-serif;
+        font-size: 16px;
+        font-weight: 900;
+    }
+    &-img {
+        margin-top: 15px;
+        & img{
+            border-radius: 8px;
+            width: 470px;
+            height: 236px;
+            @media screen and (max-width: 514px){
+                width: 270px;
+                height: auto;
+            }
+        }
+    }
+    &-btn{
+        margin-top: 25px;
+        text-align: right;
+        & .btn-main{
+            padding: 9px 185px 12px 191px;
+            & a{
+                color: #fff;
+            }
+            @media screen and (max-width: 514px){
+                padding: 9px 89px 12px 91px;
+            }
+        }
+        &-main .btn-main{
+            margin-top: 25px;
+            padding: 9px 91px 12px 91px;
+            & a{
+                color: #fff;
+            }
+        }
+    }
+    &-right{
+        margin-left: 30px;
+        @media screen and (max-width: 1000px){
+            margin-left: 15px;
+        }
+        @media screen and (max-width: 900px){
+            margin-left: 0;
+        }
+    }
+    &-title{
+        padding-top: 25px;
+    }
+
+    &-btn.review-block .btn-main a{
+        padding: 9px 100px 12px 100px;
+    }
+    &-single-post{
+        max-width: 770px;
+    }
+
+}
+.casino-review-btn.review-block .btn-main a {
+    @media screen and (max-width: 1240px) {
+        padding: 9px 96px 12px 96px;
+    }
+}
+.casino-review-reviews-title{
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 900;
+    font-size: 42px;
+    line-height: 51px;
+    color: #101240;
+    text-transform: uppercase;
+}
+
+
+// Блок отзывов
+.average-ratings {
+    display: none !important;
+}
+.comment-reply-title {
+    display: none;
+}
+.comment-form{
+    &-comment > label{
+        display: none;
+    }
+    &-author > label{
+        display: none;
+    }
+    &-email > label{
+        display: none;
+    }
+}
+
+.comments{
+    display: flex;
+    flex-wrap: wrap;
+}
+.comment-li{
+    width: 570px;
+    height: 197px;
+    background-color: #fff;
+    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    padding: 25px 20px;
+    margin: 30px 0;
+    @media screen and (max-width: 1213px) {
+        width: 520px;
+    }
+    @media screen and (max-width: 1114px) {
+        width: 470px;
+    }
+    @media screen and (max-width: 900px) {
+        width: 400px;
+    }
+    &:nth-child(even){
+        margin-left: 30px;
+        @media screen and (max-width: 1013px) {
+            margin-left: 10px;
+        }
+        @media screen and (max-width: 853px) {
+            margin-left: 0;
+        }
+    }
+}
+.comment-meta {
+    margin-top: 20px;
+    font-family: 'Gotham Pro' ,sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    color: #fff;
+    float: left;
+}
+.comment-author {
+    max-width: 169px;
+    font-family: 'Gotham Pro' ,sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 16px;
+    color: #F20505;
+}
+.comments p {
+    text-align: justify;
+    max-width: 530px;
+    margin: 10px auto 0;
+    font-family: 'Gotham Pro' ,sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: #82899D;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -moz-box;
+    -moz-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    line-clamp: 4;
+    box-orient: vertical;
+}
+.comment-respond p{
+    margin: 0;
+}
+p.comment-notes{
+    display: none;
+}
+textarea#comment.comment-form {
+    width: 670px;
+    min-height: 159px;
+    overflow: auto;
+    outline: none;
+    resize: none;
+    border: 3px solid #DFE5EE;
+    padding: 13px 20px 13px 20px;
+    border-radius: 8px;
+    font-size: 12px;
+    line-height: 16px;
+    color: #8690A0;
+    @media screen and (max-width: 1213px) {
+        width: 570px;
+    }
+    @media screen and (max-width: 1114px) {
+        width: 470px;
+    }
+    @media screen and (max-width: 900px) {
+        width: 400px;
+    }
+    @media screen and (max-width: 616px) {
+        max-width: 270px;
+    }
+    &:focus::-webkit-input-placeholder{
+        color: transparent;
+    }
+    &:focus:-moz-placeholder{
+        color: transparent;
+    }
+    &:focus::-moz-placeholder{
+        color: transparent;
+    }
+    :focus:-ms-input-placeholder{
+        color: transparent;
+    }
+}
+
+input#author.author, input#email{
+    width: 378px;
+    border: 3px solid #DFE5EE;
+    outline: none;
+    border-radius: 8px;
+    padding: 13px 0 13px 20px;
+    font-size: 12px;
+    line-height: 16px;
+    color: #8690A0;
+    @media screen and (max-width: 1038px) {
+        max-width: 600px;
+    }
+    @media screen and (max-width: 644px) {
+        max-width: 270px;
+        width: 270px;
+    }
+    &:nth-child(n+2){
+        margin-top: 20px;
+    }
+    &:focus::-webkit-input-placeholder{
+        color: transparent;
+    }
+    &:focus:-moz-placeholder{
+        color: transparent;
+    }
+    &:focus::-moz-placeholder{
+        color: transparent;
+    }
+    :focus:-ms-input-placeholder{
+        color: transparent;
+    }
+}
+input#submit.submit{
+    padding: 11px 55px 10px 55px;
+    border-radius: 24px;
+    background: #F0F0F0;
+    border: 1px solid #E0E0E0;
+    border-radius: 24px;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 900;
+    font-size: 11px;
+    color: #F20505;
+    text-transform: uppercase;
+    cursor: pointer;
+    &:hover{
+        transition: .3s;
+        background: #ef3737;
+        color: #FFFFFF;
+        border: 3px solid #fff;
+    }
+}
+
+.rating-container > input:checked ~ label:before,
+.rating-container > input + label:hover ~ label:before,
+.rating-container > input + label:hover:before {
+  content: "\f155";
+  color: #F20505;
+  text-shadow: 0 0 1px #333;
+}
+.rating-container:hover > input + label:hover ~ label:before,
+.rating-container:hover > input + label:hover:before {
+  content: "\f155";
+  color: #F20505;
+  text-shadow: 0 0 1px #333;
+}
+.dashicons-style {
+  &:before {
+    color: #F20505;
+  }
+}
+
+p.comment-form-author{
+    margin: 0;
+    width: 100%;
+}
+.casino-review-post .author {
+    margin-bottom: 0;
+}
+
+.comments #submit {
+    background-color: #fff;
+    padding: 9px 55px 11px 55px;
+    border-radius: 24px;
+    border: 3px solid #796AE1;
+    font-family: 'Gilroy', sans-serif;
+    font-size: 11px;
+    line-height: 11px;
+    font-weight: 900;
+    color: #F20505;
+    text-transform: uppercase;
+    cursor: pointer;
+    &:hover{
+        background: #8CA5FF;
+        color: #FFF;
+        border: 3px solid #8CA5FF;
+    }
+}
+.comments-rating{
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.rating-text{
+    margin-right: 20px;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    color: #82899D;
+}
+.comment-form {
+    display: grid;
+    grid-template-columns: 470px 670px;
+    grid-template-rows: 44px 44px 44px 44px;
+    gap: 30px 30px;
+    grid-template-areas:
+      "comment-form-author comment-form-comment"
+      "comment-form-email comment-form-comment"
+      "comments-rating comment-formcomment"
+      "empty form-submit";
+  }
+  .comment-form-author { grid-area: comment-form-author; }
+  .comment-form-email { grid-area: comment-form-email; }
+  .comments-rating { grid-area: comments-rating; }
+  .comment-form-comment { grid-area: comment-form-comment; }
+  .form-submit { grid-area: form-submit; }
+  .empty { grid-area: empty; }
+
+
+@media screen and (max-width: 1213px) {
+    .comment-form {
+    display: grid;
+    grid-template-columns: 470px 470px;
+    grid-template-rows: 44px 44px 44px 44px;
+    gap: 30px 30px;
+    grid-template-areas:
+      "comment-form-author comment-form-comment"
+      "comment-form-email comment-form-comment"
+      "comments-rating comment-formcomment"
+      "empty form-submit";
+  }
+}
+@media screen and (max-width: 1013px) {
+    .comment-form {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+p.form-submit{
+    text-align: right;
+    @media screen and (max-width: 1013px) {
+        text-align: left;
+    }
+}

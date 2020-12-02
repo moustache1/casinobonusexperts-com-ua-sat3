@@ -1,0 +1,1466 @@
+[
+    {
+        "key": "group_5fa53969ba111",
+        "title": "Casino Review",
+        "fields": [
+            {
+                "key": "field_5fa53986d2c8c",
+                "label": "Top Page Text (max 2 paragraph)",
+                "name": "top_page_text",
+                "type": "wysiwyg",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "tabs": "all",
+                "toolbar": "full",
+                "media_upload": 1,
+                "delay": 0
+            },
+            {
+                "key": "field_5fa54a60c51a7",
+                "label": "Casino Review Info (about casino)",
+                "name": "casino_review_info",
+                "type": "group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "block",
+                "sub_fields": [
+                    {
+                        "key": "field_5fa54b91c51a8",
+                        "label": "Casino Review Info Title",
+                        "name": "casino-review-info-title",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_5fa54be0c51a9",
+                        "label": "Casino Review Info Item",
+                        "name": "casino_review_info_item",
+                        "type": "repeater",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "collapsed": "",
+                        "min": 0,
+                        "max": 0,
+                        "layout": "table",
+                        "button_label": "",
+                        "sub_fields": [
+                            {
+                                "key": "field_5fa54e50ba123",
+                                "label": "Casino Review Info Item Title",
+                                "name": "casino_review_info_item_title",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": ""
+                            },
+                            {
+                                "key": "field_5fa54e65ba124",
+                                "label": "Casino Review Info Item Select",
+                                "name": "casino_review_info_item_select",
+                                "type": "select",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "choices": {
+                                    "text": "текст",
+                                    "check": "чекбокс"
+                                },
+                                "default_value": false,
+                                "allow_null": 0,
+                                "multiple": 0,
+                                "ui": 0,
+                                "return_format": "value",
+                                "ajax": 0,
+                                "placeholder": ""
+                            },
+                            {
+                                "key": "field_5fa54e8eba125",
+                                "label": "Casino Review Info Item Value",
+                                "name": "casino_review_info_item_value",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": ""
+                            },
+                            {
+                                "key": "field_5fa54eaaba126",
+                                "label": "Casino Review Info Check",
+                                "name": "casino_review_info_check",
+                                "type": "true_false",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_5fa54e65ba124",
+                                            "operator": "==",
+                                            "value": "check"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "message": "",
+                                "default_value": 0,
+                                "ui": 0,
+                                "ui_on_text": "",
+                                "ui_off_text": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "field_5fa562f57c028",
+                "label": "Casino Review Info (parameters)",
+                "name": "casino_review_parameters",
+                "type": "group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "block",
+                "sub_fields": [
+                    {
+                        "key": "field_5fa562f57c029",
+                        "label": "Casino Review Info Title",
+                        "name": "casino_review_info_title_parameters",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_5fa562f57c02a",
+                        "label": "Casino Review Info Item",
+                        "name": "casino_review_info_item_parameters",
+                        "type": "repeater",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "collapsed": "",
+                        "min": 0,
+                        "max": 0,
+                        "layout": "table",
+                        "button_label": "",
+                        "sub_fields": [
+                            {
+                                "key": "field_5fa562f57c02b",
+                                "label": "Casino Review Info Item Title",
+                                "name": "casino_review_info_item_title_parameters",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": ""
+                            },
+                            {
+                                "key": "field_5fa562f57c02c",
+                                "label": "Casino Review Info Item Select",
+                                "name": "casino_review_info_item_select_parameters",
+                                "type": "select",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "choices": {
+                                    "text": "текст",
+                                    "check": "чекбокс"
+                                },
+                                "default_value": false,
+                                "allow_null": 0,
+                                "multiple": 0,
+                                "ui": 0,
+                                "return_format": "value",
+                                "ajax": 0,
+                                "placeholder": ""
+                            },
+                            {
+                                "key": "field_5fa562f57c02d",
+                                "label": "Casino Review Info Item Value",
+                                "name": "casino_review_info_item_value_parameters",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": ""
+                            },
+                            {
+                                "key": "field_5fa562f57c02e",
+                                "label": "Casino Review Info Check",
+                                "name": "casino_review_info_check_parameters",
+                                "type": "true_false",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_5fa562f57c02c",
+                                            "operator": "==",
+                                            "value": "check"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "message": "",
+                                "default_value": 0,
+                                "ui": 0,
+                                "ui_on_text": "",
+                                "ui_off_text": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "field_5fa569ce6c795",
+                "label": "Casino Review Info (bonuses)",
+                "name": "casino_review_bonuses",
+                "type": "group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "block",
+                "sub_fields": [
+                    {
+                        "key": "field_5fa569ce6c796",
+                        "label": "Casino Review Info Title",
+                        "name": "casino_review_info_title_bonuses",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_5fa569ce6c797",
+                        "label": "Casino Review Info Item",
+                        "name": "casino_review_info_item_bonuses",
+                        "type": "repeater",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "collapsed": "",
+                        "min": 0,
+                        "max": 0,
+                        "layout": "table",
+                        "button_label": "",
+                        "sub_fields": [
+                            {
+                                "key": "field_5fa569ce6c798",
+                                "label": "Casino Review Info Item Title",
+                                "name": "casino_review_info_item_title_bonuses",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": ""
+                            },
+                            {
+                                "key": "field_5fa569ce6c799",
+                                "label": "Casino Review Info Item Select",
+                                "name": "casino_review_info_item_select_bonuses",
+                                "type": "select",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "choices": {
+                                    "text": "текст",
+                                    "check": "чекбокс"
+                                },
+                                "default_value": false,
+                                "allow_null": 0,
+                                "multiple": 0,
+                                "ui": 0,
+                                "return_format": "value",
+                                "ajax": 0,
+                                "placeholder": ""
+                            },
+                            {
+                                "key": "field_5fa569ce6c79a",
+                                "label": "Casino Review Info Item Value",
+                                "name": "casino_review_info_item_value_bonuses",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": ""
+                            },
+                            {
+                                "key": "field_5fa569ce6c79b",
+                                "label": "Casino Review Info Check",
+                                "name": "casino_review_info_check_bonuses",
+                                "type": "true_false",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_5fa569ce6c799",
+                                            "operator": "==",
+                                            "value": "check"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "message": "",
+                                "default_value": 0,
+                                "ui": 0,
+                                "ui_on_text": "",
+                                "ui_off_text": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "field_5fa84b33c1aa0",
+                "label": "Casino Review Info (cash img)",
+                "name": "casino_review_cash",
+                "type": "group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "block",
+                "sub_fields": [
+                    {
+                        "key": "field_5fa84b33c1aa2",
+                        "label": "Casino Review Cash Image",
+                        "name": "casino_review_cash_image",
+                        "type": "repeater",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "collapsed": "",
+                        "min": 0,
+                        "max": 0,
+                        "layout": "table",
+                        "button_label": "",
+                        "sub_fields": [
+                            {
+                                "key": "field_5fa84dfa226e6",
+                                "label": "Casino Review Cash Image Item",
+                                "name": "casino_review_cash_image_item",
+                                "type": "image",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "return_format": "array",
+                                "preview_size": "full",
+                                "library": "all",
+                                "min_width": "",
+                                "min_height": "",
+                                "min_size": "",
+                                "max_width": "",
+                                "max_height": "",
+                                "max_size": "",
+                                "mime_types": ""
+                            }
+                        ]
+                    },
+                    {
+                        "key": "field_5fa85f936f98c",
+                        "label": "Casino Review Cash Title",
+                        "name": "casino_review_cash_title",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    }
+                ]
+            },
+            {
+                "key": "field_5fa85fd61df14",
+                "label": "Casino Review Info (provider img)",
+                "name": "casino_review_provider",
+                "type": "group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "block",
+                "sub_fields": [
+                    {
+                        "key": "field_5fa85fd61df18",
+                        "label": "Casino Review Provider Title",
+                        "name": "casino_review_provider_title",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_5fa85fd61df15",
+                        "label": "Casino Review Provider Image",
+                        "name": "casino_review_provider_image",
+                        "type": "repeater",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "collapsed": "",
+                        "min": 0,
+                        "max": 0,
+                        "layout": "table",
+                        "button_label": "",
+                        "sub_fields": [
+                            {
+                                "key": "field_5fa85fd61df16",
+                                "label": "Casino Review Provider Image Item",
+                                "name": "casino_review_provider_image_item",
+                                "type": "image",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "return_format": "array",
+                                "preview_size": "full",
+                                "library": "all",
+                                "min_width": "",
+                                "min_height": "",
+                                "min_size": "",
+                                "max_width": "",
+                                "max_height": "",
+                                "max_size": "",
+                                "mime_types": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "field_5fa983c97d1e3",
+                "label": "Casino Parameter (Affiliate Block)",
+                "name": "casino_parameter",
+                "type": "group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "block",
+                "sub_fields": [
+                    {
+                        "key": "field_5fa983fb7d1e4",
+                        "label": "Casino Parameter Name",
+                        "name": "casino_parameter_name",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_5fa9860b7d1e5",
+                        "label": "Casino Parameter Prize",
+                        "name": "casino_parameter_prize",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_5fa986487d1e6",
+                        "label": "Casino Parameter Description",
+                        "name": "casino_parameter_description",
+                        "type": "text",
+                        "instructions": "в идеале - 2 строки текста",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_5fa988fb7d1e8",
+                        "label": "Casino Parameter Image",
+                        "name": "casino_parameter_image",
+                        "type": "image",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "array",
+                        "preview_size": "medium",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "post"
+                },
+                {
+                    "param": "post_category",
+                    "operator": "!=",
+                    "value": "category:blog"
+                },
+                {
+                    "param": "post_category",
+                    "operator": "!=",
+                    "value": "category:slots"
+                },
+                {
+                    "param": "post_category",
+                    "operator": "==",
+                    "value": "category:casino-review"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    },
+    {
+        "key": "group_5f68e73552e50",
+        "title": "FAQ",
+        "fields": [
+            {
+                "key": "field_5f68e7b22d36f",
+                "label": "Item",
+                "name": "faq",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "collapsed": "",
+                "min": 0,
+                "max": 0,
+                "layout": "table",
+                "button_label": "",
+                "sub_fields": [
+                    {
+                        "key": "field_5f68e7c72d370",
+                        "label": "Question",
+                        "name": "faq_question",
+                        "type": "textarea",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "50",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "rows": 2,
+                        "new_lines": ""
+                    },
+                    {
+                        "key": "field_5f68e7ea2d371",
+                        "label": "Answer",
+                        "name": "faq_answer",
+                        "type": "textarea",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "50",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "rows": 2,
+                        "new_lines": ""
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "page"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    },
+    {
+        "key": "group_5f693d190f746",
+        "title": "Footer Icons",
+        "fields": [
+            {
+                "key": "field_5f693d4ae7dee",
+                "label": "Images",
+                "name": "footer-top",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "collapsed": "",
+                "min": 0,
+                "max": 0,
+                "layout": "block",
+                "button_label": "",
+                "sub_fields": [
+                    {
+                        "key": "field_5f693d62e7def",
+                        "label": "",
+                        "name": "image",
+                        "type": "image",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "id",
+                        "preview_size": "full",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "acf-options-footer"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    },
+    {
+        "key": "group_5fa2c0d733ffe",
+        "title": "Front Page",
+        "fields": [
+            {
+                "key": "field_5fa2c0e5353d4",
+                "label": "Text Block 1",
+                "name": "text_block_1",
+                "type": "wysiwyg",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "tabs": "all",
+                "toolbar": "full",
+                "media_upload": 1,
+                "delay": 0
+            },
+            {
+                "key": "field_5fa4185a1434e",
+                "label": "Text Block 2",
+                "name": "text_block_2",
+                "type": "wysiwyg",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "tabs": "all",
+                "toolbar": "full",
+                "media_upload": 1,
+                "delay": 0
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_type",
+                    "operator": "==",
+                    "value": "front_page"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    },
+    {
+        "key": "group_5fa2a5a96eb42",
+        "title": "Games",
+        "fields": [
+            {
+                "key": "field_5fa2a6350e181",
+                "label": "Game Info",
+                "name": "game_info",
+                "type": "group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "block",
+                "sub_fields": [
+                    {
+                        "key": "field_5fa2a6ab0e182",
+                        "label": "Info Title",
+                        "name": "info_title",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_5fa2a6be0e183",
+                        "label": "Info Item",
+                        "name": "info_item",
+                        "type": "repeater",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "collapsed": "",
+                        "min": 0,
+                        "max": 0,
+                        "layout": "table",
+                        "button_label": "",
+                        "sub_fields": [
+                            {
+                                "key": "field_5fa2a72b0e184",
+                                "label": "Item Title",
+                                "name": "item_title",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": ""
+                            },
+                            {
+                                "key": "field_5fa2ba6f27e39",
+                                "label": "Item Select",
+                                "name": "item_select",
+                                "type": "select",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "choices": {
+                                    "text": "текст",
+                                    "check": "чекбокс"
+                                },
+                                "default_value": false,
+                                "allow_null": 0,
+                                "multiple": 0,
+                                "ui": 0,
+                                "return_format": "value",
+                                "ajax": 0,
+                                "placeholder": ""
+                            },
+                            {
+                                "key": "field_5fa2a7dc0e185",
+                                "label": "Item Value",
+                                "name": "item_value",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_5fa2ba6f27e39",
+                                            "operator": "==",
+                                            "value": "text"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": ""
+                            },
+                            {
+                                "key": "field_5fa2af3b46d65",
+                                "label": "Item Check",
+                                "name": "item_check",
+                                "type": "true_false",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_5fa2ba6f27e39",
+                                            "operator": "==",
+                                            "value": "check"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "message": "",
+                                "default_value": 0,
+                                "ui": 0,
+                                "ui_on_text": "",
+                                "ui_off_text": ""
+                            }
+                        ]
+                    },
+                    {
+                        "key": "field_5fa2b445490e5",
+                        "label": "Info Item Image",
+                        "name": "info_item_image",
+                        "type": "image",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "array",
+                        "preview_size": "full",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    }
+                ]
+            },
+            {
+                "key": "field_5fb2a12d9e145",
+                "label": "Iframe",
+                "name": "iframe",
+                "type": "text",
+                "instructions": "Вставляем код айфрейма вместе с тегами <script>\r\nПример: <script src=\"https:\/\/pelicansource.com\/pr\/2657\" id=\"pap_pr_2657\"><\/script>\r\nНе забываем адаптировать размеры фрейма, чтобы верстка не посыпалась на адаптиве",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "post"
+                },
+                {
+                    "param": "post_category",
+                    "operator": "!=",
+                    "value": "category:blog"
+                },
+                {
+                    "param": "post_category",
+                    "operator": "!=",
+                    "value": "category:casino-review"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    },
+    {
+        "key": "group_5f7e0e54f3d14",
+        "title": "h1",
+        "fields": [
+            {
+                "key": "field_5f7e0e598ac4e",
+                "label": "h1",
+                "name": "h1",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "post"
+                }
+            ],
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "page"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    },
+    {
+        "key": "group_5f695cd67b01a",
+        "title": "Social Menu",
+        "fields": [
+            {
+                "key": "field_5f695ceb0b861",
+                "label": "Icon",
+                "name": "social_icon",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "preview_size": "full",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "nav_menu_item",
+                    "operator": "==",
+                    "value": "all"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    },
+    {
+        "key": "group_5fac37bb56f40",
+        "title": "Аватар автора",
+        "fields": [
+            {
+                "key": "field_5fac37d8b7548",
+                "label": "Аватар",
+                "name": "avatar",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "preview_size": "full",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "user_form",
+                    "operator": "==",
+                    "value": "all"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    },
+    {
+        "key": "group_5fabe6697f721",
+        "title": "Выбор игр",
+        "fields": [
+            {
+                "key": "field_5fabe71ef8cd5",
+                "label": "Выбор игр",
+                "name": "front_games",
+                "type": "relationship",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "post_type": "",
+                "taxonomy": "",
+                "filters": [
+                    "search",
+                    "post_type",
+                    "taxonomy"
+                ],
+                "elements": "",
+                "min": "",
+                "max": "",
+                "return_format": "object"
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_type",
+                    "operator": "==",
+                    "value": "front_page"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    },
+    {
+        "key": "group_5fabec7522137",
+        "title": "Выбор казино (горизонтальные и вертикальные блоки)",
+        "fields": [
+            {
+                "key": "field_5fabec843af7c",
+                "label": "Vertical Casino",
+                "name": "vertical_casino",
+                "type": "relationship",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "post_type": "",
+                "taxonomy": "",
+                "filters": [
+                    "search",
+                    "post_type",
+                    "taxonomy"
+                ],
+                "elements": "",
+                "min": "",
+                "max": "",
+                "return_format": "object"
+            },
+            {
+                "key": "field_5fac0a4b55762",
+                "label": "Horizontal Casino",
+                "name": "horizontal_casino",
+                "type": "relationship",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "post_type": "",
+                "taxonomy": "",
+                "filters": [
+                    "search",
+                    "post_type",
+                    "taxonomy"
+                ],
+                "elements": "",
+                "min": "",
+                "max": "",
+                "return_format": "object"
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_type",
+                    "operator": "==",
+                    "value": "front_page"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "вертикальные - вверху главной страницы"
+    }
+]

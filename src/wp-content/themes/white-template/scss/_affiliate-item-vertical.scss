@@ -1,0 +1,105 @@
+.affiliate__vertical{
+    width: 270px;
+    height: 440px;
+    background-color: #fff;
+    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-top: none;
+    &:hover{
+        border: 2px solid #F20505;
+        transition: .4s;
+        border-top: none;
+        cursor: pointer;
+    }
+    & .slick-slide{
+        height: 440px;
+        width: 270px;
+        & .slick-current .slick-active{
+            height: 440px;
+            width: 270px;
+        }
+    }
+    &-img img{
+        border-radius: 8px;
+        width: 270px;
+        height: 124px;
+    }
+    &-stars{
+        font-family: 'Gilroy', sans-serif;
+        font-weight: 900;
+        font-size: 14px;
+        line-height: 26px;
+        color: #F20505;
+    }
+    &-rating{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 10px;
+    }
+    &-mark{
+        margin-left: 10px;
+        color: #F20505;
+        font-family: 'Gilroy', sans-serif;
+        font-size: 16px;
+        font-weight: 900;
+    }
+    &-title{
+        margin-top: 20px;
+        font-family: 'Gilroy', sans-serif;
+        font-weight: 900;
+        font-size: 16px;
+        line-height: 21px;
+        color: #101240;
+        text-transform: uppercase;
+    }
+    &-price{
+        color: #101240;
+        margin-top: 18px;
+        font-family: 'Gilroy', sans-serif;
+        font-weight: 900;
+        font-size: 16px;
+        line-height: 21px;
+        height: 58px;
+    }
+    &-descr{
+        color: #101240;
+        font-family: 'Gilroy', sans-serif;
+        font-weight: 900;
+        font-size: 14px;
+        line-height: 21px;
+        margin-bottom: 21px;
+        height: 42px;
+        & span{
+            color: #F20505;
+        }
+    }
+    &-read{
+        margin-top: 30px;
+        color: #F20505;
+        font-family: 'Gilroy', sans-serif;
+        font-weight: 900;
+        font-size: 14px;
+        line-height: 14px;
+        padding-bottom: 5px;
+        text-transform: uppercase;
+        & a{
+            color: #F20505;
+        }
+        &:hover{
+            color: #101240;
+        }
+    }
+    & a.btn-main {
+        color: #fff;
+    }
+}
+.affiliate__vertical.slick-slide.slick-active{
+    height: 440px !important;
+    width: 270px !important;
+}

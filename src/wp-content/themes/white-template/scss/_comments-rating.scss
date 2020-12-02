@@ -1,0 +1,210 @@
+.comments {
+  font-size: 16px;
+  p {
+    text-align: justify;
+  }
+  li {
+    list-style-type: none;
+  }
+  input,
+  optgroup,
+  select,
+  textarea {
+    width: 100%;
+    margin-top: 5px;
+  }
+  input {
+    padding: 2px 7px 7px;
+  }
+  textarea {
+    padding: 5px 10px;
+  }
+  label {
+    font-size: 16px;
+  }
+  #email-notes {
+    display: none;
+  }
+  #submit {
+    width: 80%;
+    max-width: 270px;
+    height: 45px;
+    display: block;
+    font-size: 20px;
+    line-height: 40px;
+    border: none;
+    margin: 10px auto 0;
+    padding: 0;
+    &:hover {
+      filter: brightness(120%);
+    }
+  }
+}
+.comment-notes {
+  display: none;
+}
+.comments-caption {
+  text-align: center;
+  font-size: 22px;
+  padding: 20px 10px;
+}
+.comment-li {
+  padding: 20px 0;
+  h3 {
+    text-align: center;
+  }
+}
+.comment {
+  &-author {
+    font-size: 18px;
+    font-weight: 700px;
+  }
+  &-title {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    font-style: italic;
+    margin: 0 0 0 20px;
+  }
+}
+.comment-form-title {
+  width: 49%;
+  max-width: 520px;
+  float: right;
+  @media screen and (max-width: 700px) {
+    float: none;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+.comment-form-author {
+  width: 49%;
+  display: inline-block;
+  max-width: 300px;
+  @media screen and (max-width: 700px) {
+    float: none;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+.comment-meta {
+  float: right;
+  color: grey;
+  font-size: 14px;
+  @media screen and (max-width: 500px) {
+    float: none;
+  }
+}
+.comment-reply-link {
+  color: gray;
+  &:hover {
+    color: black;
+  }
+}
+.comment-reply-title {
+  color: #000000;
+  text-align: center;
+}
+#cancel-comment-reply-link {
+  color: red;
+  &:hover {
+    text-shadow: 0 0 10px orangered;
+  }
+}
+.comment-author {
+  font-weight: 700;
+}
+
+.comments-rating {
+  border: none;
+  padding: 0;
+  margin-left: 0;
+  label {
+    font-size: 22px;
+  }
+}
+
+.comments-rating label {
+  display: inline-block;
+}
+
+.rating-container {
+  /* remove inline-block whitespace */
+  font-size: 0;
+  /* flip the order so we can use the + and ~ combinators */
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+
+.rating-container * {
+  font-size: 1.4rem;
+}
+
+.rating-container > input {
+  display: none;
+}
+
+.rating-container > input + label {
+  /* only enough room for the star */
+  font-family: "dashicons";
+  display: inline-block;
+  overflow: hidden;
+  text-indent: 9999px;
+  width: 1em;
+  white-space: nowrap;
+  cursor: pointer;
+  margin: 0;
+}
+
+.rating-container > input + label:before {
+  display: inline-block;
+  text-indent: -9999px;
+  content: "\f154";
+  color: #888;
+}
+
+.rating-container > input:checked ~ label:before,
+.rating-container > input + label:hover ~ label:before,
+.rating-container > input + label:hover:before {
+  content: "\f155";
+  text-shadow: 0 0 1px #333;
+}
+
+.rating-container > .star-cb-clear + label {
+  text-indent: -9999px;
+  width: 0.5em;
+  margin-left: -0.5em;
+}
+
+.rating-container > .star-cb-clear + label:before {
+  width: 0.5em;
+}
+
+.rating-container:hover > input + label:before {
+  content: "\f154";
+  color: #888;
+  text-shadow: none;
+}
+
+.rating-container:hover > input + label:hover ~ label:before,
+.rating-container:hover > input + label:hover:before {
+  content: "\f155";
+  text-shadow: 0 0 1px #333;
+}
+.average-ratings {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  &__text {
+    margin-right: 5px;
+    font-weight: 700;
+    font-size: 16px;
+  }
+  .rating-count {
+    width: 100%;
+    padding: 10px 0 0 0;
+  }
+}
+.label-for-rating {
+  display: block;
+}

@@ -1,0 +1,17 @@
+.blog-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+	margin: 30px 0;
+	@media (max-width: 380px) {
+		justify-content: center;
+    }
+
+    & .small-blog{
+        max-width: 270px;
+        margin: 0 11px 15px 11px;
+        position: relative;
+        transition: .15s;
+        box-shadow: 0 8px 16px rgba(41,13,98,.15);
+        border-radius: 8px;
+    }
+}

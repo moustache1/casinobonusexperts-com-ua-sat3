@@ -1,0 +1,98 @@
+
+// faq
+$faqPadding: 18px;
+$faqItemArrowWidth: 12px;
+$faqItemArrowHeight: 6px;
+
+// mixins
+
+@mixin push-auto {
+    margin: {
+     left: auto;
+     right: auto;
+    }
+}
+
+
+@mixin pseudo($display: block, $pos: absolute, $content: ''){
+    content: $content;
+    display: $display;
+    position: $pos;
+}
+
+@mixin wrapp($top: 0, $bottom: 0, $right: 0, $left: 0){
+    top: $top;
+    bottom: $bottom;
+    right: $right;
+    left: $left
+}
+
+@mixin flex-box($align-items: false, $justify-content: false, $direction: false) {
+    display: flex;
+    @if $align-items { align-items: $align-items; }
+    @if $justify-content { justify-content: $justify-content; }
+    @if $direction { flex-direction: $direction; }
+}
+
+@mixin resp-ratio($x,$y, $pseudo: false) {
+    $padding: unquote( ( $y / $x ) * 100 + '%' );
+    @if $pseudo {
+     &:before {
+      @include pseudo($pos: relative);
+      width: 100%;
+      padding-top: $padding;
+     }
+    } @else {
+     padding-top: $padding;
+    }
+}
+
+h1, h2, h3, h4, h5 {
+    text-align: left;
+    color: #fff;
+    margin-bottom: 30px;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 900;
+    @media screen and (max-width: 768px) {
+        margin-bottom: 15px;
+    }
+    &:not(:first-child) {
+        margin-top: 30px;
+        @media screen and (max-width: 768px) {
+            margin-top: 15px;
+        }
+    }
+}
+article h1, h1 {
+    font-weight: 900;
+    color: #101240;
+    font-family: 'Gilroy', sans-serif;
+    font-size: 48px;
+    line-height: 50px;
+    @media screen and (max-width: 550px){
+        font-size: 30px;
+        line-height: 36px;
+    }
+}
+article h2, h2 {
+    font-weight: 900;
+    color: #101240;
+    font-family: 'Gilroy', sans-serif;
+    font-size: 42px;
+    line-height: 46px;
+    @media screen and (max-width: 550px){
+        font-size: 25px;
+        line-height: 30px;
+    }
+}
+article h3, h3 {
+    font-weight: 900;
+    color: #101240;
+    font-family: 'Gilroy', sans-serif;
+    font-size: 24px;
+    line-height: 24px;
+    @media screen and (max-width: 550px){
+        font-size: 20px;
+        line-height: 20px;
+    }
+}

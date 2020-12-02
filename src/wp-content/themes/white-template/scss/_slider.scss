@@ -1,0 +1,86 @@
+.blog-post{
+    &-slider{
+        margin: 15px 0 40px;
+        & .affiliate__vertical{
+            margin: 0 auto 15px;
+        }
+        & .slick-dots
+        {
+            bottom: -29px;
+            display: flex;
+            justify-content: center;
+        }
+        .slick-dots li
+        {
+            width: 16px;
+            height: 16px;
+            margin: 0 20px;
+        }
+        .slick-dots li button
+        {
+            width: 16px;
+            height: 16px;
+        }
+        .slick-dots li button:before
+        {
+            width: 16px;
+            height: 16px;
+            color: #dfe5ee;
+            background-color: #dfe5ee;
+            border-radius: 50%;
+        }
+        .slick-dots li.slick-active button:before
+        {
+            color: #dfe5ee;
+            background-color: #F20505;
+        }
+    }
+}
+
+.games-post{
+    &-slider{
+        margin: 15px 0 40px;
+        & .games__vertical{
+            margin: 0 auto 15px;
+        }
+        & .slick-dots
+        {
+            bottom: -29px;
+            display: flex;
+            justify-content: center;
+        }
+        .slick-dots li
+        {
+            width: 16px;
+            height: 16px;
+            margin: 0 20px;
+        }
+        .slick-dots li button
+        {
+            width: 16px;
+            height: 16px;
+        }
+        .slick-dots li button:before
+        {
+            width: 16px;
+            height: 16px;
+            color: #dfe5ee;
+            background-color: #dfe5ee;
+            border-radius: 50%;
+        }
+        .slick-dots li.slick-active button:before
+        {
+            color: #dfe5ee;
+            background-color: #F20505;
+        }
+    }
+}
+
+.slick-slider {
+    @media screen and (max-width: 1225px) {
+        max-width: 1170px;
+    }
+}
+.slick-track{
+    padding-bottom: 5px;
+}

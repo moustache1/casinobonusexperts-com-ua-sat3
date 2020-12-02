@@ -1,0 +1,29 @@
+FROM alpine:3.9
+
+RUN apk add --no-cache \
+	shadow \
+	php7-dom \
+	php7-curl \
+	php7-common \
+	php7-fpm \
+	php7-ftp \
+	php7-gd \
+	php7-iconv \
+	php7-json \
+	php7-mbstring \
+	php7-mysqli \
+	php7-openssl \
+	php7-posix \
+	php7-simplexml \
+	php7-sockets \
+	php7-tokenizer \
+	php7-xml \
+	php7-xmlreader \
+	php7-zip
+
+RUN sed -i '/^max_execution_time/c\max_execution_time = 90' /etc/php7/php.ini
+
+RUN useradd --uid 1000 --no-create-home www-data
+
+WORKDIR /var/www/html
+CMD ["/usr/sbin/php-fpm7", "-F"]
